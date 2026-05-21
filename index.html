@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0d10" />
+
+  <title>Drew Wallace — Engineer, Veteran, Maker</title>
+  <meta name="description" content="Drew Wallace — U.S. Air Force veteran, IT infrastructure generalist, and operations leader in electronic security contracting. A decade of integrating Windows, RHEL, networks, and enterprise access control. Maker, home-labber, builder of tools." />
+  <meta name="author" content="Drew Wallace" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://drewgwallace.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Drew Wallace — Engineer, Veteran, Maker" />
+  <meta property="og:description" content="U.S. Air Force veteran. IT infrastructure generalist and operations leader in electronic security contracting. Maker, home-labber, builder of tools." />
+  <meta property="og:url" content="https://drewgwallace.com/" />
+  <meta property="og:image" content="https://drewgwallace.com/avatar.png" />
+  <meta property="og:image:alt" content="Portrait of Drew Wallace" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Drew Wallace — Engineer, Veteran, Maker" />
+  <meta name="twitter:description" content="U.S. Air Force veteran. IT infrastructure generalist and operations leader in electronic security contracting. Maker, home-labber, builder of tools." />
+  <meta name="twitter:image" content="https://drewgwallace.com/avatar.png" />
+
+  <!-- Favicon (inline SVG, no extra request) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d10'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='ui-sans-serif,system-ui,sans-serif' font-size='34' font-weight='700' fill='%23e6e8ec'%3EDW%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="/avatar.png" />
+
+  <!-- Structured data: Person schema for richer search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Drew Wallace",
+    "url": "https://drewgwallace.com/",
+    "image": "https://drewgwallace.com/avatar.png",
+    "jobTitle": "Operations Manager / Architectural Solutions Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" },
+    "worksFor": { "@type": "Organization", "name": "Convergint Technologies" },
+    "alumniOf": { "@type": "Organization", "name": "United States Air Force" },
+    "knowsAbout": ["Electronic security", "Access control", "Systems integration", "IT infrastructure", "Windows administration", "RHEL", "Avaya ASR/TTS", "Automation", "Home lab", "3D printing"],
+    "sameAs": [
+      "https://www.linkedin.com/in/drewgwallace/",
+      "https://github.com/IdleStep"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg-elev: #14171c;
+      --fg: #e6e8ec;
+      --fg-muted: #9aa3ad;
+      --border: #23282f;
+      --accent: #7cc4ff;
+      --radius: 14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(124,196,255,0.06), transparent 60%),
+        var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: clamp(24px, 6vw, 64px) 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 144px;
+      height: 144px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 24px;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0 0 24px;
+    }
+
+    .about {
+      color: var(--fg);
+      margin: 0 auto 32px;
+      max-width: 56ch;
+      text-align: left;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-elev);
+      color: var(--fg);
+      font-weight: 500;
+      font-size: 15px;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover, .btn:focus-visible {
+      background: #1b1f25;
+      border-color: #323842;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+      fill: currentColor;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: var(--fg-muted);
+      font-size: 13px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-labelledby="name">
+      <img class="avatar" src="avatar.png" alt="Portrait of Drew Wallace" width="144" height="144" />
+
+      <h1 id="name">Drew Wallace</h1>
+
+      <p class="about">
+        U.S. Air Force veteran, maker, generalist. Over 14 years integrating and
+        administering the unglamorous infrastructure that keeps organizations
+        moving: Windows and RHEL, networks, enterprise access control, Avaya
+        ASR/TTS, and the long tail of vendor systems most people never see.
+        These days I am an operations leader in electronic security contracting under
+        a deliberately vague title: part systems architect, part engineer,
+        part person who builds the process that makes the other processes
+        make sense. Outside of work it's 3D printers, a home lab where I
+        usually break things on purpose, and two dogs supervising the whole
+        operation. Build, break, tooling ✌️
+      </p>
+
+      <div class="buttons" role="group" aria-label="Profiles">
+        <a class="btn" href="https://github.com/IdleStep" rel="me noopener" target="_blank" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.77 1.06.77 2.14v3.17c0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/drewgwallace/" rel="me noopener" target="_blank" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="y"></span> Drew Wallace
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
