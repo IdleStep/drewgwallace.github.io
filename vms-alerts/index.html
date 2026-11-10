@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="robots" content="noindex" />
+  <title>Home Alert Backup - Drew Wallace</title>
+  <meta name="description" content="Home Alert Backup is a private, single-user tool that copies motion snapshots from the owner's home camera system to the owner's own Google Drive." />
+  <link rel="canonical" href="https://drewgwallace.com/vms-alerts/" />
+  <style>
+    :root { --bg:#0b0d10; --bg-elev:#14171c; --fg:#e6e8ec; --fg-muted:#9aa3ad; --border:#23282f; --accent:#7cc4ff; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      padding: 48px 24px;
+    }
+    main { max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 34px; margin: 0 0 8px; font-weight: 600; letter-spacing: -0.01em; }
+    h2 { font-size: 20px; margin: 32px 0 8px; font-weight: 600; }
+    p, li { color: var(--fg-muted); }
+    a { color: var(--accent); }
+    .card { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; margin-top: 24px; }
+    footer { margin-top: 40px; font-size: 14px; color: var(--fg-muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Home Alert Backup</h1>
+    <p>A small personal tool that keeps an off-site copy of motion snapshots from my home camera system.</p>
+
+    <div class="card">
+      <p>Home Alert Backup is built and used by one person, its owner, Drew Wallace. It is not a public service, it has no other users, and it is not available for download or sign-up.</p>
+    </div>
+
+    <h2>What it does</h2>
+    <p>When the cameras at my home detect motion, a scheduled job copies the resulting still images to a folder in my own Google Drive. If the recording server at home were ever lost or stolen, the snapshots would still exist off-site. Old snapshots are deleted from Drive automatically after 30 days.</p>
+
+    <h2>Google access</h2>
+    <p>The tool asks only for the Google Drive "drive.file" permission. That permission limits it to files and folders the tool itself created. It cannot see or change any other file in the account.</p>
+
+    <h2>More information</h2>
+    <p>Read the <a href="/vms-alerts/privacy">privacy policy</a>.</p>
+
+    <footer>&copy; Drew Wallace. <a href="/">drewgwallace.com</a></footer>
+  </main>
+</body>
+</html>
